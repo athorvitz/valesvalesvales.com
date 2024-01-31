@@ -1,9 +1,9 @@
-$(document).ready(function() {
+$(document).ready(function () {
     var playlist = [{
         id: 0,
         sources: [{
             type: "video/mp4",
-            src: "http://player.vimeo.com/external/122315924.hd.mp4?s=a3b67c8182a406ad28dc9a95634617c1"
+            src: "https://player.vimeo.com/external/122315924.hd.mp4?s=9a432e94b8f52179857b43017019ec59224596ca&profile_id=113"
         }, ],
         config: {
             poster: "images/SALMON_LOOPS.jpg",
@@ -16,7 +16,7 @@ $(document).ready(function() {
     }, {
         id: 1,
         sources: [{
-            src: 'http://player.vimeo.com/external/122286383.hd.mp4?s=44faaafa6cbb13b34c3a6d0a418ff4ab',
+            src: "https://player.vimeo.com/external/122286383.hd.mp4?s=7a353778450ff050a04ac7cac51001822b56e350&profile_id=113",
             type: 'video/mp4'
         }, ],
         config: {
@@ -30,7 +30,7 @@ $(document).ready(function() {
     }, {
         id: 2,
         sources: [{
-            src: "http://player.vimeo.com/external/122286379.hd.mp4?s=2b878a9ded145cad02275003b868c79c",
+            src: "https://player.vimeo.com/external/122286379.hd.mp4?s=c33f35375b9f6ea3295396485598406514c71b85&profile_id=113",
             type: 'video/mp4'
         }, ],
         config: {
@@ -44,7 +44,7 @@ $(document).ready(function() {
     }, {
         id: 3,
         sources: [{
-            src: "http://player.vimeo.com/external/122286381.hd.mp4?s=217cc4ed1c9e9801b610303c83272c9d",
+            src: "https://player.vimeo.com/external/122286381.hd.mp4?s=3bbaf36f034b3ee7553999887eb3a8212bb1cedf&profile_id=113",
             type: 'video/mp4'
         }, ],
         config: {
@@ -58,7 +58,7 @@ $(document).ready(function() {
     }, {
         id: 4,
         sources: [{
-            src: "http://player.vimeo.com/external/122340051.hd.mp4?s=6d07568b059b61530c44e0dc8ac8c145",
+						src: "https://player.vimeo.com/external/122340051.hd.mp4?s=9dc42e3f594f5cc185abd5081305f0ee9698fcfb&profile_id=119",
             type: 'video/mp4'
         }, ],
         config: {
@@ -72,7 +72,7 @@ $(document).ready(function() {
     }, {
         id: 5,
         sources: [{
-            src: "http://player.vimeo.com/external/122315927.hd.mp4?s=ac949e708bc26376d43ed43333ca3392",
+						src: "https://player.vimeo.com/external/122315927.hd.mp4?s=83ed5421a91a4bfe359646eb50768cbc667b86e6&profile_id=113",
             type: 'video/mp4'
         }, ],
         config: {
@@ -86,7 +86,7 @@ $(document).ready(function() {
     }, {
         id: 6,
         sources: [{
-            src: "http://player.vimeo.com/external/122286382.hd.mp4?s=2cedc1467835adc5beec9f0874a4f30d",
+						src: "https://player.vimeo.com/external/122286382.hd.mp4?s=0ad50b8be8b003167f205c8b38c3c8da02a72882&profile_id=113",
             type: 'video/mp4'
         }, ],
         config: {
@@ -100,7 +100,7 @@ $(document).ready(function() {
     }, {
         id: 7,
         sources: [{
-            src: "http://player.vimeo.com/external/122315925.hd.mp4?s=ede608c57f636b7900ab11bdc12f7d40",
+						src: "https://player.vimeo.com/external/122315925.hd.mp4?s=6da95fb16dc1930f065900cdbc0c366fc8f92ac8&profile_id=113",
             type: 'video/mp4'
         }, ],
         config: {
@@ -114,7 +114,7 @@ $(document).ready(function() {
     }, {
         id: 8,
         sources: [{
-            src: "http://player.vimeo.com/external/122315929.hd.mp4?s=d6530c7e897a26109c56e42e37f464fe",
+						src: "https://player.vimeo.com/external/122315929.hd.mp4?s=19e2ffbe7483d2c2b5e695066e51a23d15ebafb1&profile_id=113",
             type: 'video/mp4'
         }, ],
         config: {
@@ -128,7 +128,7 @@ $(document).ready(function() {
     }, {
         id: 9,
         sources: [{
-            src: "http://player.vimeo.com/external/122286380.hd.mp4?s=51203cf3b1d0ef07a6f95ee37fcaa6e5",
+						src: "https://player.vimeo.com/external/122286380.hd.mp4?s=191b2ca66c752160920babac9af331bf514d75b1&profile_id=113",
             type: 'video/mp4'
         }, ],
         config: {
@@ -142,7 +142,7 @@ $(document).ready(function() {
     }, {
         id: 10,
         sources: [{
-            src: "http://player.vimeo.com/external/122315928.hd.mp4?s=9bdd609afdec596c42b21db9fe5d93de",
+						src: "https://player.vimeo.com/external/122315928.hd.mp4?s=25ab3c5eed2cb3e7008302eb29a5e2ad06773254&profile_id=113",
             type: 'video/mp4'
         }, ],
         config: {
@@ -155,24 +155,24 @@ $(document).ready(function() {
         }
     }];
     var controls = {
-        setThumbs: function() {
+        setThumbs: function () {
             var playlistArray = playlist.slice();
-            playlistArray.sort(function(a, b) {
+            playlistArray.sort(function (a, b) {
                 return a.config.layout_position - b.config.layout_position;
             });
-            for(var i = 0; i < playlistArray.length; i++) {
+            for (var i = 0; i < playlistArray.length; i++) {
                 $('.site-container').append('<div class="video-container item-' + playlistArray[i].config.playlist_position + '" data-id="' + playlistArray[i].id + '" data-playlist-position="' + playlistArray[i].config.playlist_position + '" style="background-image: url(' + playlistArray[i].config.poster + ');"></div>')
             };
         },
-        playTrack: function(ele) {
+        playTrack: function (ele) {
             $('.video-container').off();
             var _this = this;
-            if(_this.bigVideo) {
+            if (_this.bigVideo) {
                 _this.bigVideo.getPlayer().off();
                 _this.bigVideo.remove();
                 _this.bigVideo = false;
             }
-            if(_this.currentPlayer) {
+            if (_this.currentPlayer) {
                 _this.currentPlayer = false;
             }
             $('.active').removeClass('active');
@@ -180,14 +180,14 @@ $(document).ready(function() {
             var current = $(ele).attr('data-id');
             var cp = playlist[current];
             _this.currentPlayer = cp;
-            $(function() {
+            $(function () {
                 _this.bigVideo = new $.BigVideo({
                     useFlashForFirefox: false,
                     container: $('.active')
                 });
                 _this.bigVideo.init();
                 _this.bigVideo.show(cp.sources);
-                _this.bigVideo.getPlayer().on('ended', function(e) {
+                _this.bigVideo.getPlayer().on('ended', function (e) {
                     e.preventDefault();
                     e.stopImmediatePropagation();
                     _this.donePlaying(e);
@@ -196,33 +196,32 @@ $(document).ready(function() {
             });
             _this.listen();
         },
-        start: function() {
+        start: function () {
             var _this = this;
             _this.setThumbs();
             _this.playTrack('.item-0');
             return;
         },
-        listen: function() {
+        listen: function () {
             var _this = this;
-            // jQuery click listener for changing current playing track.
-            $('.video-container').on('click', function(e) {             
-                e.preventDefault();     
+            $('.video-container').on('click', function (e) {
+                e.preventDefault();
                 e.stopImmediatePropagation();
-                // If player div was clicked, do nothing.
-                if($(this).hasClass('active')) { return; }
-                // If player is part of the queue, do nothing.
-                 if((typeof(playlist[($(e.currentTarget).attr('data-playlist-position') - 1)]) != 'undefined' && playlist[($(this).attr('data-playlist-position') - 1)].config.played) || playlist[$(this).attr('data-id')].config.skipTo)  {
-                     _this.playTrack(e.currentTarget);                
-                 }         
-                return;                
+                if ($(this).hasClass('active')) {
+                    return;
+                }
+                if ((typeof (playlist[($(e.currentTarget).attr('data-playlist-position') - 1)]) != 'undefined' && playlist[($(this).attr('data-playlist-position') - 1)].config.played) || playlist[$(this).attr('data-id')].config.skipTo) {
+                    _this.playTrack(e.currentTarget);
+                }
+                return;
             });
         },
-        checkNextPlay: function(advance) {
+        checkNextPlay: function (advance) {
             var _this = this;
             var currentVideo = _this.currentPlayer.config.playlist_position;
             var nextTrack = _this.getNextTrack(advance);
-            if(nextTrack) {
-                if(nextTrack.config.autoplay) {
+            if (nextTrack) {
+                if (nextTrack.config.autoplay) {
                     _this.playTrack('.item-' + nextTrack.config.playlist_position);
                 } else {
                     _this.checkNextPlay(advance + 1);
@@ -235,23 +234,23 @@ $(document).ready(function() {
         currentPlayer: false,
         bigVideo: false,
         animating: false,
-        getNextTrack: function(advance) {
+        getNextTrack: function (advance) {
             var _this = this;
-            if(_this.currentPlayer == false) {
+            if (_this.currentPlayer == false) {
                 return false;
             }
             var playlistArray = _this.getOrderedPlaylist();
             return playlistArray[(_this.currentPlayer.config.playlist_position + 1 + (advance || 0))] || false;
         },
-        donePlaying: function() {
+        donePlaying: function () {
             var _this = this;
             _this.currentPlayer.config.played = true;
             _this.checkNextPlay(0);
             return;
         },
-        getOrderedPlaylist: function() {
+        getOrderedPlaylist: function () {
             var playlistArray = playlist.slice();
-            playlistArray.sort(function(a, b) {
+            playlistArray.sort(function (a, b) {
                 return a.config.playlist_position - b.config.playlist_position;
             });
             return playlistArray;
