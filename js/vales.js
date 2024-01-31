@@ -1,4 +1,4 @@
-$(document).ready(function () {
+const startVideo = () =>  {
     var playlist = [{
         id: 0,
         sources: [{
@@ -257,4 +257,5 @@ $(document).ready(function () {
         }
     };
     controls.start();
-});
+    $('#start-button-wrapper').remove();
+};
