@@ -258,4 +258,5 @@ const startVideo = () =>  {
     };
     controls.start();
     $('#start-button-wrapper').remove();
+    $('#wrap').show();
 };
