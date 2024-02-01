@@ -301,13 +301,13 @@ a { color: #eee; }
   background-size: cover;
   background-color: transparent;
 
-  width: 50vw;
-  height: 50vw;
+  width: 40vw;
+  height: 40vw;
   border-radius: 100%;
   border: none;
 
   font-family: Georgia,Times,Times New Roman,serif;
-  font-size: 4.5vw;
+  font-size:3.6vw;
   font-weight: bold;
 
   cursor: pointer;
