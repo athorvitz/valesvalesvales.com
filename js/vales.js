@@ -200,7 +200,6 @@ const startVideo = () =>  {
             var _this = this;
             _this.setThumbs();
             _this.playTrack('.item-0');
-            _this.bigVideo.getPlayer().requestFullscreen();
             return;
         },
         listen: function () {
